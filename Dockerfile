@@ -1,6 +1,6 @@
-# Squid3
+# Rsyslog
 #
-# A VERY simple squid proxy server.
+# Rsyslog central log server.
 
 FROM phusion/baseimage:0.9.15
 MAINTAINER CosmicQ <cosmicq@cosmicegg.net>
