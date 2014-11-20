@@ -11,13 +11,12 @@ RUN locale-gen en_US.UTF-8
 
 RUN ln -s -f /bin/true /usr/bin/chfn
 
-# Install Squid
+# Install Rsyslog
 RUN add-apt-repository -y ppa:adiscon/v8-stable
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install rsyslog && apt-get clean
 
 ADD rsyslog.conf /etc/rsyslog.conf
-# ADD update_rsyslog.sh /etc/my_init.d/01_update_rsyslog.sh
 ADD start_rsyslogd.sh /etc/service/rsyslog/run
 RUN rm -rf /etc/service/syslog-ng
 
