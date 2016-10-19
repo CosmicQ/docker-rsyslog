@@ -2,7 +2,7 @@
 #
 # Rsyslog central log server.
 
-FROM phusion/baseimage:0.9.18
+FROM phusion/baseimage:0.9.19
 MAINTAINER CosmicQ <cosmicq@cosmicegg.net>
 
 ENV HOME /root
